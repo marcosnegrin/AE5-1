@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+    <!--Marcos j. Negrín Aranguren 1ºASIR B-->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="..\css\estilo.css">
+    <link rel="shortcut icon" href="..\img\favicon-96x96.png" type="image/x-icon">
+    <title>Multimedia</title>
+</head>
+<body>
+   <h1>La web de las artes</h1>
+   <ul>
+       <li><a href="..\index.html">Inicio</a></li>
+       <li><a href="musica.html">Música</a></li>
+       <li><a href="cine.html">Cine</a></li>
+       <li><a href="generosLiterarios.html">Géneros Literarios</a></li>
+       <li><a href="multimedia.html">Multimedia</a></li>
+       <li><a href="contacto.html">Contáctanos</a></li>
+  </ul> 
+  <script>
+    function masTexto(inp) {
+                var x = document.getElementsByClassName("texto")[inp];
+                var y = document.getElementsByClassName("vinc")[inp];
+                
+                var t1 ='<img src="../img/imagen3.png" alt=""><b>Lorem ipsum dolor sit amet</b>, consectetur adipisicing elit. Dolorem corrupti consequuntur ea error commodi cumque, doloribus perferendis! Architecto itaque, aliquid inventore eaque, explicabo temporibus quo magni laudantium sed, in consequatur!';
+                var t2 ='<b>Lorem, ipsum dolor sit amet</b> consectetur adipisicing elit. Sunt, dolorum nemo alias quos eveniet ratione omnis, eius adipisci aliquam, harum nisi? Alias minima ullam cupiditate aliquid assumenda. Praesentium, adipisci eaque suscipit asperiores rerum nisi voluptatem voluptate saepe perferendis eum <img src="../img/imagen4.png" alt="">possimus assumenda, fugiat obcaecati deserunt facere alias earum qui similique ullam.'
+                var t3 = ' <b>Lorem ipsum dolor sit amet </b> adipisicing elit. Totam itaque, molestiae commodi quod atque id officiis repudiandae quo suscipit vel necessitatibus. Nesciunt consectetur soluta est sequi rerum, laboriosam tenetur vitae, sit nemo quae sunt consequuntur amet earum dolor magni modi. <img src="../img/imagen2.png" alt="">'
+                var t4 ='<b>Lorem ipsum dolor sit amet</b> consectetur adipisicing elit. Autem fugit at nisi enim harum ducimus quibusdam ullam recusandae obcaecati quod ex laborum adipisci, sapiente quasi assumenda repellat sunt, numquam suscipit? Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque officia vel dignissimos delectus quae, nobis nulla ducimus? Tempora sequi delectus quaerat reprehenderit impedit repellendus nam porro dolores ipsa. Rerum, eos. <iframe width="760" height="315" src="https://www.youtube.com/embed/R7hTUxzbH48?si=KXzQKegCxsE64Ym9" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>'
+                var t5 =' <b><video controls width="320" height="240" > <source src="../video/TeoremadeThales.mp4" type="video/mp4"></video>Lorem ipsum dolor, sit amet</b> consectetur adipisicing elit. Nihil exercitationem dolores quas pariatur doloremque consequuntur aspernatur in quasi veniam excepturi. Beatae rerum ipsa quam. Itaque similique amet dolorum ducimus sunt?'
+                var t6 ='<b>Lorem ipsum dolor sit amet</b> consectetur adipisicing elit. Eos nostrum quos blanditiis eius praesentium velit ab vitae? Libero repudiandae distinctio incidunt possimus atque perspiciatis culpa at esse qui nulla! Qui. <video controls width="320" height="240" poster="../img/video.jpg"> <source src="../video/saberprogramar.webm" type="video/mp4"> </video>'
+                var t7 ='<b><video controls width="320" height="240" ><source src="../video/musica.mp3" type="video/mp4"></video>Lorem ipsum dolor sit, amet</b> consectetur adipisicing elit. Eaque accusantium facilis porro assumenda, quaerat numquam obcaecati neque possimus accusamus officia necessitatibus natus magni deleniti sequi nulla illum! Illo, nisi quam.'
+                switch(inp){
+                case 0:
+                x.innerHTML = t1;
+                break;
+                case 1:
+                x.innerHTML = t2;
+                break;
+                case 2:
+                x.innerHTML = t3;
+                break;
+                case 3: 
+                x.innerHTML = t4;
+                break;
+                case 4: 
+                x.innerHTML = t5;
+                break;
+                case 5: 
+                x.innerHTML = t6;
+                break;
+                case 6: 
+                x.innerHTML = t7;
+                break;
+                }
+                y.style.display = "none";
+            }
+    </script>
+  <section>
+    <h2>Mi Portfolio</h2>
+    <p class="texto"><img src="..\img\imagen3.png" alt="">
+        <b>Lorem ipsum dolor sit amet</b>, consectetur adipisicing elit. Dolorem corrupti consequunt inventore eaque, explicabo temporibus quo magni lauda
+        <a href="#" class="vinc" onclick="masTexto(0); return false;">Seguir leyendo...</a>
+    </p>
+    <p class="texto">
+        <b>Lorem, ipsum dolor sit amet</b> consectetur adipisicing elit. Sunt, dolorum nemo alias quos evenarum nisi? Alate im nisi voluptatem voluptate saepe perferendis eum <img src="..\img\imagen4.png" alt="">possimus assumenda, fugiat obcaecati deserunt facere alias earum qui similique ullam.
+        <a href="#" class="vinc" onclick="masTexto(1); return false;">Seguir leyendo...</a>
+    </p>
+    <p class="texto">
+        <b>Lorem ipsum dolor sit amet </b> adipisicing elit. Totam itaque, molestiae commodi quod atque id officii vel necesectetu rclicker  consequuntur amet earum dolor magni modi.
+        <img src="..\img\imagen2.png" alt="">
+        <a href="#" class="vinc" onclick="masTexto(2); return false;">Seguir leyendo...</a>
+    </p>
+    <p class="texto">
+       <b>Lorem ipsum dolor sit amet</b> consectetur adipisicing elit. Autem fugit at nisi enim harum ducimus sandae obcaecatisumenda re, numquam sum dolor sit amet consectetur adipisicing elit. Eaque officia vel dignissimos delectus quae, nobis nulla ducimus? Tempora sequi delectus quaerat reprehenderit impedit repellendus nam porro dolores ipsa. Rerum, eos.
+       <iframe width="760" height="315" src="https://www.youtube.com/embed/R7hTUxzbH48?si=KXzQKegCxsE64Ym9" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+       <a href="#" class="vinc" onclick="masTexto(3); return false;">Seguir leyendo...</a>
+    </p>
+    <p class="texto">
+        <b><video controls width="320" height="240" >
+            <source src="..\video\TeoremadeThales.mp4" type="video/mp4">
+        </video>Lorem ipsum dolor, sit amet</b> consectetur adipisicing elit. Nihil exercitationem dolores quas pariatur doloremque consequuntur aspernatur in quasi veniam excepturi. Beatae rerum ipsa quam. Itaque similique amet dolorum ducimus sunt?
+        <a href="#" class="vinc" onclick="masTexto(4); return false;">Seguir leyendo...</a>
+    </p>
+    <p class="texto">
+        <b>Lorem ipsum dolor sit amet</b> consectetur adipisicing elit. Eos nostrum quos blanditiis eius praesentium velit ab vitae? Libero repudiandae distinctio incidunt possimus atque perspiciatis culpa at esse qui nulla! Qui.
+        <video controls width="320" height="240" poster="..\img\video.jpg">
+            <source src="..\video\saberprogramar.webm" type="video/mp4">
+        </video>
+        <a href="#" class="vinc" onclick="masTexto(5); return false;">Seguir leyendo...</a>
+    </p>
+    <p class="texto">
+        <b><video controls width="320" height="240" >
+            <source src="..\video\musica.mp3" type="video/mp4">
+        </video>Lorem ipsum dolor sit, amet</b> consectetur adipisicing elit. Eaque accusantium facilis porro assumenda, quaerat numquam obcaecati neque possimus accusamus officia necessitatibus natus magni deleniti sequi nulla illum! Illo, nisi quam.
+        <a href="#" class="vinc" onclick="masTexto(6); return false;">Seguir leyendo...</a>
+    </p>
+  </section>
+  <a href="">Inicio</a>
+</body>
+</html>
+

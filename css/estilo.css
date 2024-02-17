@@ -1,0 +1,54 @@
+/*Marcos J. Negrín Aranguren 1ºASIR B*/
+section{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-top: 1px solid gray;
+    border-bottom: 1px solid gray;
+    padding: 10px;
+}
+
+#construction{
+    width: 50%;
+}
+
+table tr {
+    border: 1px solid black;
+    margin: 0 auto;
+    border-collapse: collapse;
+}
+td{
+    padding: 20px;
+    border: 1px solid black;
+    vertical-align: middle;
+    text-align: center;
+}
+#centro{
+    display: inline-block;
+}
+
+.formulario{
+    border: 1px solid black; 
+    margin-top: 20px;
+    
+}
+
+.offset{
+    margin-top: -10px;
+    margin-left: 10px;
+    background-color: white;
+    width: 120px;
+}
+
+#menu{
+    background-image: url("../img/figuras-menu.png");
+    background-size: cover;
+    height: 800px;
+    width: 1200px;
+}
+
+.figura{
+    height: 250px;
+    width: 250px;
+    position: absolute;
+
+}
